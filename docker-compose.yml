@@ -1,0 +1,37 @@
+version: "3"
+services:
+
+  springboot-app:
+    image: springboot-app
+    restart: always
+    build: .
+    ports:
+      - "9090:8082"
+    environment:
+      POSTGRES_HOST: pgdb
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: sa123
+      POSTGRES_PORT: 5432
+    depends_on:
+      pgdb:
+        condition: service_healthy
+
+  pgdb:
+    container_name: pgdb
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: springboot
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: sa123
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sa -d springboot"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres-data:
