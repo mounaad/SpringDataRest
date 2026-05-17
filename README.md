@@ -8,6 +8,7 @@
 
 ### 1. Cloner le repo
 git clone https://github.com/mounaad/SpringDataRest.git
+
 cd SpringDataRest
 
 ### 2. Lancer le backend + base de données
@@ -18,7 +19,9 @@ docker ps
 
 ### 4. Lancer le frontend
 cd src/main/webapp/reactjs
+
 npm install
+
 npm start
 
 ## URLs
