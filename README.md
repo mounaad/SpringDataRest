@@ -7,11 +7,11 @@
 ## Lancer le projet
 
 ### 1. Cloner le repo
-git clone https://github.com/VOTRE_USERNAME/SpringDataRest.git
+git clone https://github.com/mounaad/SpringDataRest.git
 cd SpringDataRest
 
 ### 2. Lancer le backend + base de données
-docker-compose -f docker-compose.yml up -d --build
+docker-compose up -d --build
 
 ### 3. Vérifier que les containers tournent
 docker ps
