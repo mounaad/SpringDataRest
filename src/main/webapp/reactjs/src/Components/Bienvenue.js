@@ -8,7 +8,6 @@ class Bienvenue extends React.Component {
                 <blockquote className="blockquote mb-0">
                     <p>Le meilleur de nos voitures est exposé près de chez vous</p>
                     <footer className="blockquote-footer text-secondary">
-                        Master MIOLA
                     </footer>
                 </blockquote>
             </div>
