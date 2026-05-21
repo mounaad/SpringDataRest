@@ -11,6 +11,9 @@ git clone https://github.com/mounaad/SpringDataRest.git
 
 cd SpringDataRest
 
+### 2. Builder le jar
+mvn clean package -DskipTests
+
 ### 2. Lancer le backend + base de données
 docker-compose up -d --build
 
