@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Form, Col, Row, Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../axiosConfig';
 import MyToast from './MyToast';
 
 // Wrapper pour injecter useParams dans un composant classe

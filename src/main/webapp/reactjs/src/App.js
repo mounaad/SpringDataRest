@@ -9,6 +9,7 @@ import VoitureList from './Components/VoitureList';
 import Footer from './Components/Footer';
 import Login from './Components/Login';
 import Register from './Components/Register';
+import Chatbot from './Components/Chatbot'; // ✅ ajouté
 
 // Protection des routes
 const PrivateRoute = ({ children }) => {
@@ -39,6 +40,7 @@ function App() {
                                             <Route path="/add" element={<Voiture />} />
                                             <Route path="/edit/:id" element={<Voiture />} />
                                             <Route path="/list" element={<VoitureList />} />
+                                            <Route path="/chatbot" element={<Chatbot />} /> {/* ✅ ajouté */}
                                         </Routes>
                                     </Col>
                                 </Row>

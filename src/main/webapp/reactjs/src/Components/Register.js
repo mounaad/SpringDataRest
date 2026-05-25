@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Form, Col, Row, Button } from 'react-bootstrap';
-import axios from 'axios';
+import axios from '../axiosConfig';
 
 export default class Register extends Component {
 

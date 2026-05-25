@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Table, Button, ButtonGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../axiosConfig';
 import MyToast from './MyToast';
 
 export default class VoitureList extends Component {

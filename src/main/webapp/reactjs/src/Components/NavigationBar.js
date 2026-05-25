@@ -20,11 +20,12 @@ function NavigationBar() {
                 <Nav className="me-auto">
                     <Link to="/add" className="nav-link">Ajouter Voiture</Link>
                     <Link to="/list" className="nav-link">Liste Voitures</Link>
+                    <Link to="/chatbot" className="nav-link">🤖 Assistant IA</Link> {/* ✅ ajouté */}
                 </Nav>
                 <Nav>
-          <span className="navbar-text text-white me-3">
-            👤 {username}
-          </span>
+                    <span className="navbar-text text-white me-3">
+                        👤 {username}
+                    </span>
                     <Button variant="outline-light" size="sm" onClick={logout}>
                         Déconnexion
                     </Button>

@@ -1,6 +1,10 @@
 import axios from 'axios';
 
-axios.interceptors.request.use(config => {
+const instance = axios.create({
+    baseURL: 'http://localhost:9090'
+});
+
+instance.interceptors.request.use(config => {  // ✅ instance
     const token = localStorage.getItem("token");
     if (token) {
         config.headers.Authorization = `Bearer ${token}`;
@@ -8,4 +12,4 @@ axios.interceptors.request.use(config => {
     return config;
 });
 
-export default axios;
+export default instance;  // ✅ instance

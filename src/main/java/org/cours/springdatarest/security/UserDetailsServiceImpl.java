@@ -1,7 +1,7 @@
 package org.cours.springdatarest.security;
 
-import org.cours.springdatarest.modele.*;
 import org.cours.springdatarest.modele.User;
+import org.cours.springdatarest.modele.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
