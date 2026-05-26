@@ -1,8 +1,0 @@
-server.port=8082
-spring.datasource.url=jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/springboot
-spring.datasource.username=${POSTGRES_USER:sa}
-spring.datasource.password=${POSTGRES_PASSWORD:sa123}
-spring.jpa.hibernate.ddl-auto=update
-spring.ai.openai.api-key=${GROQ_API_KEY}
-spring.ai.openai.base-url=https://api.groq.com/openai
-spring.ai.openai.chat.options.model=llama-3.3-70b-versatile
