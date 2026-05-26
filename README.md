@@ -27,9 +27,12 @@ npm install
 
 npm start
 
+## Créer un compte puis s'inscrire
+
 ## URLs
 - Frontend React  : http://localhost:3000
 - Backend API     : http://localhost:9090/api/voitures
+
 
 ## Architecture
 - Frontend  : React (port 3000)
